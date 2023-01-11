@@ -1,0 +1,19 @@
+[package]
+build = "build.rs"
+name = "rego-to-wasm"
+version = "0.1.0"
+edition = "2021"
+authors = ["Joseph Livesey <jlivesey@gmail.com>"]
+description = "compiles wasm binaries from rego source"
+include = ["src/*", "LICENSE", "README.md"]
+keywords = ["opa", "rego", "wasm"]
+license = "MIT"
+readme = "./README.md"
+repository = "https://github.com/suchapalaver/rego-to-wasm"
+
+[dependencies]
+anyhow = "1.0.68"
+opa    = "0.9.0"
+
+[build-dependencies]
+opa         = "0.9.0"
